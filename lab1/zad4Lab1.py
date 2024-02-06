@@ -1,12 +1,13 @@
 try:
-    chislo = int(input('Введите двоичное число: '));
+    chislo = int(input('Введите число: '));
     a = 0;
 except ValueError:
     print('fef');
 finally:
-    while (chislo >1):
+    while (chislo >0):
         if(chislo%2==1):
             a+=1;
+            chislo //=2;
         else:
-            break;
+            chislo //=2;
 print(a);
