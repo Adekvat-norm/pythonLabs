@@ -6,5 +6,5 @@ except ValueError:
     print('Не то');
 finally:
     bukva = input('Введите букву: ');
-print(bukva, slovo.index(bukva));
+print(bukva, slovo.index(bukva)+1);
   #print(slovo.index('c'))
