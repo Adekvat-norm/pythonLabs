@@ -5,4 +5,4 @@ except ValueError:
 finally:
     while(chislo>=1):
         numb = chislo%2;
-        print();
+        print();dwd
