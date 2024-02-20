@@ -7,13 +7,10 @@ try:
         print('Дано слово: ', slovo)
         bukva = input('Введите букву: ')
         if bukva in slovo:
-            print('Индексы буквы "{}" в слове "{}":'.format(bukva, slovo))
             index = 0
-            for char in slovo:
-                if char == bukva:
-                    print(index)
+            for i in slovo:
+                if i == bukva:
+                    print(bukva, index+1)
                 index += 1
-        else:
-            print('Буква "{}" не найдена в слове "{}"'.format(bukva, slovo))
 except ValueError:
     print('Не то')
