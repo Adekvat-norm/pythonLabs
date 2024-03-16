@@ -1,5 +1,5 @@
 a=[];
-spisok = [a.append(x) for x in input('Введите элементы в списке: ')];
+spisok = [a.append(x) for x in input('Введите элементы в списке: ').split(' ')];
 largest = a[0];
 smallest = a[0];
 largest_index = 0;

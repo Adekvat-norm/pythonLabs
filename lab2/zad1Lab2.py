@@ -1,5 +1,5 @@
 a = [];
-spisok = [a.append(x) for x in input('Введите элементы списка: ')];
+spisok = [a.append(x) for x in input('Введите элементы списка: ').split(' ')];
 n = int(input('Какое действие вы хотите сделать?\n 1.Сложение\n 2.Произведение '));
 index = 0;
 if (n==1):

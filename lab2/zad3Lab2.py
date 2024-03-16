@@ -1,5 +1,6 @@
 a=[];
-spisok = [a.append(x) for x in input('Введите элементы в списке: ')];
+spisok = [a.append(x) for x in input('Введите элементы в списке:').split(' ')];
+print(a);
 index=0;
 while(a):
     bukva = a[index];
