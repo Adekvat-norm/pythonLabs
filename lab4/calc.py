@@ -21,13 +21,25 @@ if n==2:
     b = int(input('Введите значение 2: '));
     print(delRemains(a,b));
 if n==3:
-    x = int(input('Введите значение x: '));
+    x = float(input('Введите значение x: '));
     q = int(input('Что хотите выбрать: \n 1. Синус \n 2. Косинус \n 3. Тангенц \n 4. Котангенц'));
     if q==1:
-        print(tailor_sin(math.pi/x));
+        radianX = math.radians(x);
+        sinX = tailor_sin(radianX);
+        print(f"Угол в градусах: {x}")
+        print(f"Синус угла: {sinX}")
     if q==2:
-        print(tailor_cos(math.pi/x));
+        radianX = math.radians(x);
+        cosX = tailor_cos(radianX);
+        print(f"Угол в градусах: {x}")
+        print(f"Косинус угла: {cosX}")
     if q==3:
-        print(tailor_tg(math.pi/x));
+        radianX = math.radians(x);
+        tgX = tailor_tg(radianX);
+        print(f"Угол в градусах: {x}")
+        print(f"Тангенц угла: {tgX}")
     if q==4:
-        print(tailor_ctg(math.pi/x));
+        radianX = math.radians(x);
+        ctgX = tailor_ctg(radianX);
+        print(f"Угол в градусах: {x}")
+        print(f"Котангенц угла: {ctgX}")
